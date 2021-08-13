@@ -1,0 +1,530 @@
+ .navbar-brand {
+      width: 70px;
+  height: 70px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  background: white
+
+    }
+
+    #btt{
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      font-size: 22vw;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(24,2,2,0.5);
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+    .banner{
+       position: relative;
+  text-align: center;
+  color: white;
+    }
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner h5{
+text-shadow: 2px 2px black;
+font-size: 4.5vw;
+font-weight: 1000;
+color: white;
+}
+h4{
+  text-shadow: 1px 1px black;
+  font-size:2vw;
+}
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Learn More";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.img-aboutUs{
+  height: 30em;
+  width: 20em;
+  align-content: center;
+
+}
+
+
+/*about us*/
+.h5-aboutUs{
+  text-shadow: 2px 2px black;
+font-size: 4.5em;
+font-weight: 1000;
+color: black;
+}
+.h4-aboutUs{
+  font-size: 1.5em;
+}
+h5{
+  text-shadow: 1px 1px black;
+font-size: 2.5em;
+font-weight: 1000;
+color: black;
+}
+h1{
+  text-shadow: 1px 1px black;
+font-size: 3.5em;
+font-weight: 1000;
+color: black;
+}
+body{
+  border-radius: 20px;/*
+  background-image: linear-gradient(#feb236,#d64161);*/
+
+} 
+footer h5{
+  color: white;
+}
+.mav, .goal{
+
+ font-size : 4.5px;
+
+   }
+.mav:hover, .goal:hover{
+ box-shadow: 10px 10px 5px grey;
+} 
+
+.mav, .goal{ 
+  height: 300px;
+  transition: transform .5s ease; 
+  } 
+  .nature,.places, .people{ 
+    height: 250px;
+     width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 50%;
+   }
+   .blogs{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+   }
+   .div-nature,.div-places,.div-people {
+  position: relative;
+  width: 350px; 
+  height: 900.21px;
+  background-color: #64C7CC;
+  margin: 90.60px 0;
+  border: white;
+}
+
+.div-nature:before,.div-places:before,.div-people:before,.div-nature:after ,.div-places:after ,.div-people:after  {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.div-nature:before,.div-places:before,.div-people:before{
+  bottom: 100%;
+  border-bottom: 90.60px solid #64C7CC;
+}
+
+.div-nature:after ,.div-places:after ,.div-people:after  {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+
+   .div-people:hover,  .div-nature:hover,  .div-places:hover{
+     box-shadow: 10px 10px 5px grey;
+   }
+   /*media queries*/
+   @media screen and (min-width: 1024px) {
+   
+ .navbar{
+  margin-right: -14px;
+ }
+    #btt{
+
+      font-size: 12px;
+      width: 100px;
+      height: 100px;
+    }
+
+.h4-aboutUs{
+  font-size: 1em;
+}
+.whoarewe{
+  font-size: 1.5em;
+}
+.img-aboutUs{
+  height: 35em;
+  width: 35em;
+  align-content: center;
+
+}
+ .mav, .goal{
+
+ font-size :1.5em;
+ display: inline-block;
+      width: 100%;
+
+   }
+  /* .mav{
+    margin-bottom: -1em;
+   }*/
+.mav:hover, .goal:hover{
+ box-shadow: 10px 10px 5px grey;
+} 
+.p-mav{
+font-size: 1em
+}
+.mav, .goal{ 
+
+  height: 300px;
+  width: auto;
+  transition: transform .5s ease; 
+  font-size: 1em
+  } 
+  .nature,.places, .people{ 
+    height: 250px;
+     width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 50%;
+   }
+   .blogs{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+   }
+   .div-nature,.div-places,.div-people {
+  position: relative;
+  width: 350px; 
+  height: 900.21px;
+  background-color: #64C7CC;
+  margin: 90.60px 0;
+  border: white;
+}
+
+.div-nature:before,.div-places:before,.div-people:before,.div-nature:after ,.div-places:after ,.div-people:after  {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 230px solid transparent;
+  border-right: 230px solid transparent;
+  overflow: hidden;
+}
+
+.div-nature:before,.div-places:before,.div-people:before{
+  bottom: 100%;
+  border-bottom: 90.60px solid #64C7CC;
+}
+
+.div-nature:after ,.div-places:after ,.div-people:after  {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+   }
+@media screen and (max-width: 768px) {
+   .navbar-brand {
+      width: 60px;
+  height: 60px;
+  line-height:50px;
+
+    }
+    #btt{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 30px
+    }
+
+/*about us*/
+.h5-aboutUs{
+  text-shadow: 1px 1px black;
+font-size: 2.5em;
+font-weight: 1000;
+color: black;
+}
+.h4-aboutUs{
+  font-size: 1em;
+}
+.whoarewe{
+  font-size: 1.5em;
+}
+.img-aboutUs{
+  height: 30em;
+  width: 20em;
+  align-content: center;
+
+}
+ .mav, .goal{
+
+ font-size :0.8em;
+ display: inline-block;
+      width: 100%;
+
+   }
+   .mav{
+    margin-bottom: 1em;
+   }
+.mav:hover, .goal:hover{
+ box-shadow: 10px 10px 5px grey;
+} 
+
+.mav, .goal{ 
+  height: 300px;
+  transition: transform .5s ease; 
+  } 
+  .nature,.places, .people{ 
+    height: 250px;
+     width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 50%;
+   }
+   .blogs{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+   }
+   .div-nature,.div-places,.div-people{
+    border:none;
+    padding: 10px;
+    margin-top:30px;
+   /* max-width: 100%;*/
+    /*width: 50em;*/
+    border-radius: 5px
+    box-shadow: 10px 10px 5px grey;
+
+   }
+   .div-people:hover,  .div-nature:hover,  .div-places:hover{
+     box-shadow: 10px 10px 5px grey;
+   }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .navbar{
+    margin-right: -14px;
+  }
+  .navbar-brand {
+      width: 60px;
+  height: 60px;
+  line-height:50px;
+
+    }
+    #btt{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 30px
+    }
+.div-footer{
+  margin-right: -17px
+}
+/*about us*/
+/*.h5-aboutUs{
+  text-shadow: 1px 1px black;
+font-size: 2.5em;
+font-weight: 1000;
+color: black;
+}*/
+.h4-aboutUs{
+  font-size: 1em;
+}
+.whoarewe{
+  font-size: 1.5em;
+}
+.img-aboutUs{
+  height: 30em;
+  width: 20em;
+  align-content: center;
+
+}
+.h2-mav{
+  font-size: 2em;
+}
+ .mav, .goal{
+ font-size :1em;
+ display: inline-block;
+      width: 100%;
+
+   }
+   .mav{
+    margin-bottom: 3em;
+   }
+.mav:hover, .goal:hover{
+ box-shadow: none;
+} 
+
+.mav, .goal{ 
+  height: 430px;
+  transition: transform .5s ease; 
+  } 
+  .nature,.places, .people{ 
+    height: 250px;
+     width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 50%;
+   }
+   .div-nature,.div-places,.div-people{
+    border:none;
+    padding: 10px;
+    margin-top:30px;
+   /* max-width: 100%;*/
+    /*width: 50em;*/
+    border-radius: 5px
+    box-shadow: 10px 10px 5px grey;
+
+   }
+   .div-people:hover,  .div-nature:hover,  .div-places:hover{
+     box-shadow: none;
+   }
+   footer{
+    margin-right: -10px;
+   }
+
+}
+
+@media screen and (max-width: 318px) {
+.banner{
+       /*position: fixed;*/
+  text-align: center;
+  color: white;
+  margin-right: -20px;
+  margin-left: -20px;
+  /*max-width: 100%;
+  width: 1000px*/
+    }
+/*.navbar{
+  margin-right: -20px;
+}*/
+
+   .navbar-brand {
+      width: 60px;
+  height: 60px;
+  line-height:50px;
+
+    }
+    #btt{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 30px
+    }
+
+/*about us*/
+.h5-aboutUs{
+  text-shadow: 1px 1px black;
+font-size: 2.5em;
+font-weight: 1000;
+color: black;
+}
+.h4-aboutUs{
+  font-size: 1em;
+}
+.whoarewe{
+  font-size: 1.5em;
+}
+.img-aboutUs{
+  height: 20em;
+  width: 15em;
+  /*align-content: center;*/
+
+}
+ .mav, .goal{
+
+ font-size :0.8em;
+ display: inline-block;
+      width: 100%;
+
+   }
+   .mav{
+    margin-bottom: 3em;
+   }
+.mav:hover, .goal:hover{
+ box-shadow: 10px 10px 5px grey;
+} 
+
+
+  .nature,.places, .people{ 
+    height: 150px;
+     width: 150px;
+  text-align: center;
+  border-radius: 50%;
+   }
+   .blogs{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+   }
+   .div-nature,.div-places,.div-people{
+    border: none;
+    padding: 10px;
+    margin-top:30px;
+   /* max-width: 100%;*/
+    /*width: 50em;*/
+    border-radius: 5px
+    box-shadow: 10px 10px 5px white;
+
+   }
+}
